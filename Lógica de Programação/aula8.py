@@ -1,0 +1,13 @@
+nome = str("Yoshy")
+sobrenome = str("Aguilar")
+idade = int(20)
+ano_de_nascimento = int(2005)
+maior_de_idade = bool(idade >= 18)
+altura = float(1.81)
+
+print("Nome:", nome)
+print("Sobrenome:", sobrenome)
+print("Idade:", idade)
+print("Ano de nascimento:", ano_de_nascimento)
+print("Maior de idade:", maior_de_idade)
+print("Altura em metros:", altura)
