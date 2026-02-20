@@ -6,7 +6,5 @@ lista = ['Bil', 'Rodrigo', 'Gabriel', 'Gustavo', 'Nathan']
 
 lista.append('João')
 
-lista_enumerada = enumerate(lista)
-
-for indice, nome in lista_enumerada:
+for indice, nome in enumerate(lista):
     print(f'indice: {indice}', f'nome: {nome}')
