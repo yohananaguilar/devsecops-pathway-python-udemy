@@ -23,23 +23,20 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
-import os
+cpf = '74682489070'
+nove_digitos = cpf[:9]
+contador_regressivo_1 = 10
 
-cpf_valido = []
+resultado_digito_1 = 0
+for digito_1 in nove_digitos:
+    resultado_digito_1 += int(digito_1) * contador_regressivo_1
+    contador_regressivo_1 -= 1
+    
+digito_1 = (resultado_digito_1 * 10) % 11
 
-while True:
-    cpf = input('Digite os 9 primeiros números do seu CPF(000.000.000-00): ')
-    
-    for numeros in cpf:
-        cpf_valido += numeros
-    print(cpf_valido)
-    
-    for i in cpf_valido:
-        if i == '.' or i == '-':
-            del cpf_valido[i]
-            
-    print(cpf_valido)
-    break
+digito_1 = digito_1 if digito_1 <= 9 else 0
+print(digito_1)
+
 
 
     
